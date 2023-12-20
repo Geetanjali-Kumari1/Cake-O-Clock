@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake Shop - About Us</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="cakelogo.png"></a>
+
+        <nav class="navigate">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <section id="about" class="about">
+        <!-- About page content -->
+        <div class="about-content">
+            <h2>OUR STORY</h2>
+                <p>Welcome to the heart of Cake O' Clock, where every crumb tells a tale of passion and dedication. In this space, we invite you to delve into the essence of our journey.
+                Discover the story behind our delectable creations, crafted with love and a dash of innovation. 
+                Meet the faces behind the aprons, our dedicated team, fueled by a shared commitment to bring joy through irresistible treats.
+                At Cake O' Clock, we transcend the ordinary, weaving a narrative of flavor, quality, and the joy of baking. Let our story inspire yours.</p>
+            <button class="btn">Read More<i class="fas fa-angle-right"></i></button>
+        </div>
+        <div class="image">
+            <img src="im2.png" alt="img">
+        </div>
+    </section>
+
+    <footer>
+        <p>Design By&copy;Geetanjali Kumari</p>
+    </footer>
+<!-------------------------jquery------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ('#menu').click(function () {
+                $(this).toggleClass('fas fa-times');
+                $('.navigate').toggleClass('nav-toggle'); 
+            });
+
+            $(window).on('scroll load',function()
+            {
+                $('#menu').removeClass('fas fa-times');
+                $('.navigate').removeClass('nav-toggle');
+            });
+
+            $('.service .cake-list .btn1').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+
+                let src = $(this).attr('data-src');
+                $('#cake-img').attr('src', src);
+            });
+        });
+    </script>
+</body>
+
+</html>

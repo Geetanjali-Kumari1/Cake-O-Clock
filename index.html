@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake Shop - Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="cakelogo.png"></a>
+
+        <nav class="navigate">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <section id="home" class="home">
+        <!-- Home page content -->
+        <h1>Best cake in town</h1>
+        <p>Experience sweet perfection at Cake O' Clock</p>
+        <div class="home-btn">
+            <button>Book Now<i class="fas fa-angle-right"></i></button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design By&copy;Geetanjali Kumari</p>
+    </footer>
+<!-------------------------jquery------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ('#menu').click(function () {
+                $(this).toggleClass('fas fa-times');
+                $('.navigate').toggleClass('nav-toggle'); 
+            });
+
+            $(window).on('scroll load',function()
+            {
+                $('#menu').removeClass('fas fa-times');
+                $('.navigate').removeClass('nav-toggle');
+            });
+
+            $('.service .cake-list .btn1').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+
+                let src = $(this).attr('data-src');
+                $('#cake-img').attr('src', src);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cake Shop - Products</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="cakelogo.png"></a>
+
+        <nav class="navigate">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html" class="active">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu"><i class="fas fa-bars"></i></div>
+    </header>
+
+    <section id="product" class="product">
+        <!-- Product page content -->
+        <h1 class="title">Our most popular <span>cakes</span></h1>
+        <div class="cake-product">
+            <div class="inner-cake-row">
+                <div class="inner-cake-col">
+                    <img src="coco.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.500</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Cocoa cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p>a velvety chocolate delight crafted to perfection.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="lemon.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.450</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Lime cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p>a citrusy delight that's a burst of refreshing flavor in every bite.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="raspberry.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.999</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Raspberry cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p>a delightful symphony of sweet and tart perfection.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="straw.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.699</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Strawberry cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p> a delightful burst of fruity perfection in every bite.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="coc.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.850</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Coconut cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p>a heavenly blend of moist coconut goodness that transports you with every mouthful.</p>
+                </div>
+                <div class="inner-cake-col">
+                    <img src="orange.jpg" alt="">
+                    <div class="cake-price">
+                        <p>Rs.400</p>
+                    </div>
+                    <div class="cake-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h2>Orange cake</h2>
+                    <h3>gluten free – sugar free</h3>
+                    <p> a zesty delight that captures the sunshine in every slice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Design By&copy;Geetanjali Kumari</p>
+    </footer>
+<!-------------------------jquery------------------------------>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            ('#menu').click(function () {
+                $(this).toggleClass('fas fa-times');
+                $('.navigate').toggleClass('nav-toggle'); 
+            });
+
+            $(window).on('scroll load',function()
+            {
+                $('#menu').removeClass('fas fa-times');
+                $('.navigate').removeClass('nav-toggle');
+            });
+
+            $('.service .cake-list .btn1').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+
+                let src = $(this).attr('data-src');
+                $('#cake-img').attr('src', src);
+            });
+        });
+    </script>
+</body>
+
+</html>
